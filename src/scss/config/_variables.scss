@@ -1,0 +1,114 @@
+/*!
+   * Variables.scss
+   *
+   * This file contains all the variables used throughout majordesign.
+*/
+
+/* Global reusable colors
+   ========================================================================== */
+
+// Custom colors
+$primary: #ffa100;
+$secondary: #061830;
+$accent: #ff6600;
+$contrast: #161616;
+
+// Default colors
+$white: #ffffff;
+$black: #0a0a0a;
+$error: #ffa100;
+$warning: #ffa100;
+$success: #ffa100;
+$disabled: #a7a7a7;
+$silent: #7a7a7a;
+
+//
+
+
+
+// Specials
+$gradient-primary-secondary: linear-gradient($primary, $secondary);
+$gradient-primary-accent: linear-gradient($primary, $accent);
+$gradient-primary-contrast: linear-gradient($primary, $contrast);
+
+/* Body variables
+   ========================================================================== */
+
+// Font & text
+$main-font-size: 1rem;
+$main-font-family: 'Manrope', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+$main-font-weight: 400;
+$main-font-height: 1.5;
+
+// Background & color
+$main-bg: $white;
+$main-color: $black;
+
+/* Heading
+   ========================================================================== */
+
+// Heading config
+$title-font-height:1.5;
+$title-font-weight:600;
+
+
+// Heading size
+$title-1-font-size: 3rem;
+$title-2-font-size: 2.170rem;
+$title-3-font-size: 1.500rem;
+$title-4-font-size: 1.250rem;
+$title-5-font-size: 1.125rem;
+$title-6-font-size: 1rem;
+
+/* Subtitle
+   ========================================================================== */
+
+// Subtitle config
+$subtitle-font-height:1.5;
+$subtitle-font-weight:600;
+
+
+// Subtitle size
+$subtitle-1-font-size: 3rem;
+$subtitle-2-font-size: 2.170rem;
+$subtitle-3-font-size: 1.500rem;
+$subtitle-4-font-size: 1.250rem;
+$subtitle-5-font-size: 1rem;
+
+
+/**
+   * Focus
+*/
+
+// Focus config
+$focus-font-weight: 700;
+$focus-font-height: 1.7;
+
+// Focus size
+$focus-1-font-size: 7rem;
+$focus-2-font-size: 5.875rem;
+$focus-3-font-size: 4.5rem;
+$focus-4-font-size: 3.250rem;
+$focus-5-font-size: 3rem;
+
+/*
+special font family
+
+*/
+
+$special-font-family: "Times New Roman", Times, serif;
+
+// CONTAINER
+
+$container-padding: 0 1.125rem;
+
+// btn
+
+$button-padding: 0.440rem 1rem; // default
+
+$button-padding-small: .446rem .522rem;
+$button-padding-medium: .670rem .947rem;
+$button-padding-large: 1.25rem 2.5rem;
+
+$button-weight: 500;
+$button-font-family: inherit;

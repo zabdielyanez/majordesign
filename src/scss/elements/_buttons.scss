@@ -1,0 +1,150 @@
+$main-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'accent': $accent,
+    'contrast': $contrast,
+    
+    'black': $black,
+    'white': $white,
+    'example': #ff8989
+);
+
+button, .button{
+    display: inline-block;
+    text-align: center;
+    padding: $button-padding;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: $button-weight;
+    font-family: $button-font-family;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 1.5;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+/**
+    * Button default config
+    *
+    * Defines the main config for buttons.
+*/
+
+// Basic buttons
+
+@each $color, $value in $main-colors{
+    .button.is-#{$color}:not(.is-link){
+        @include button-style($value);
+    }
+}
+
+// Outline buttons
+
+@each $color, $value in $main-colors{
+    .button.is-#{$color}.is-outlined:not(.is-link){
+        @include button-outline-style($value);
+    }
+}
+
+// Ghost buttons
+
+@each $color, $value in $main-colors{
+    .button.is-#{$color}.is-ghost:not(.is-link){
+        @include button-ghost-style($value);
+    }
+}
+
+/**
+    * Button Link
+    *
+    * A special case that might be beneficial for use within cards instead of the "<a>" tag. 
+    * The button version for links is centered, includes padding, and offers a more detailed 
+    appearance compared to standard links.
+*/
+
+.button.is-link{
+
+    text-decoration: underline;
+    color: $primary;
+}
+
+/**
+    * Button Size
+    *
+    * Classes that define the size variations for buttons.
+*/
+
+.button.is-small{
+    padding: $button-padding-small;
+    font-size: 90%;
+}
+
+.button.is-normal{
+    padding: $button-padding-medium;
+    font-size: 100%;
+}
+
+.button.is-large{
+    padding: $button-padding-large;
+}
+
+/**
+    * Disabled Button Styles
+    *
+    * Apply these styles to visually indicate a disabled state for buttons or elements
+    * using the .is-disabled class. If it's an actual button, add the "disabled" attribute
+    * directly to the HTML tag.
+*/
+
+.button.is-disabled,
+.button:disabled,
+button:disabled{
+    opacity: .6;
+    pointer-events: none !important;
+}
+
+.button.is-disabled:focus,
+.button:disabled:focus,
+button:disabled:focus{
+    box-shadow: none;
+}
+
+/**
+    * Button Icon
+    *
+    * This SCSS code defines styling for a button icon container.
+    * The container automatically adjusts the margin based on the icon's position.
+    * If the icon is placed on the left, the margin is set to the right, and vice versa.
+*/
+
+.button span ~ .button-icon {
+    margin-left: .550rem;
+}
+.button .button-icon{
+    margin-right: .550rem;
+}
+
+/**
+    * Button Shape
+    *
+    * Defines the level of roundness for a button.
+    * Note: This property may undergo changes in the future; however, it is currently not necessary.
+*/
+
+.button.round-small{
+    border-radius: 7px;
+}
+.button.round-normal{
+    border-radius: 0;
+}
+.button.round-large{
+    border-radius: 9999px;
+}

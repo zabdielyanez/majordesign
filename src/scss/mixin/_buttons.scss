@@ -1,0 +1,49 @@
+@function color-prefixer($color) {
+    $r: red($color);
+    $g: green($color);
+    $b: blue($color);
+
+    $yiq: calc((($r * 299) + ($g * 587) + ($b * 114)) / 1000);
+
+    @if $yiq >= 150 {
+        @return black;
+    } @else {
+        @return white;
+    }
+}
+
+@mixin button-style($bg-color, $bg-color-hover: lighten($bg-color, 6.5%)){
+    background-color: $bg-color;
+    border-color: $bg-color;
+    color: color-prefixer($bg-color);
+
+    &:hover{
+        background-color: $bg-color-hover;
+    }
+    &:focus {
+        box-shadow: 0 0 0 3px rgba($bg-color-hover, 0.4);
+    }
+}
+
+@mixin button-outline-style($bg-color) {
+    background-color: transparent;
+    border-color: $bg-color;
+    color: $bg-color;
+
+    &:hover {
+        background-color: $bg-color;
+        color: $white;
+    }
+}
+
+@mixin button-ghost-style($bg-color) {
+    background-color: transparent;
+    border-color: transparent;
+    color: $bg-color;
+
+    &:hover {
+        background-color: $bg-color;
+        color: $white;
+    }
+}
+

@@ -1,0 +1,37 @@
+/*!
+    * Majordesign v1.0
+    * 
+    * Author: Zabdiel Yanez
+    * Repository (https://github.com/zabdielyanez/majordesign)
+    * License under MIT (https://opensource.org/licenses/MIT)
+    * 
+    * Description:
+    * Majordesign is a modern and minimalist CSS framework built using SCSS. It aims to provide a diverse range
+    * of modern and minimalist design options for web pages. This framework is tailored for developers seeking
+    * to implement clean, aesthetically pleasing, and contemporary styles with ease.
+    * 
+    * Majordesign is particularly suited for projects that require a sleek and uncluttered look, ensuring that the
+    * focus is on the content without unnecessary distractions. Its lightweight and modular architecture allow for
+    * both rapid prototyping and production-ready applications.
+    * 
+    * Usage:
+    * To get started with Majordesign, include the compiled CSS in your HTML head tag or import the SCSS files into
+    * your project. For detailed instructions and examples, refer to the documentation provided in the repository.
+    * 
+    * Release Notes:
+    * Version 1.0 marks the initial release of Majordesign, featuring a comprehensive suite of styled components,
+    * utility classes, and responsive design templates.
+*/
+
+// Config
+@import "config/_variables.scss";
+@import "config/_reset.scss";
+
+// Mixin
+@import "mixin/_buttons.scss";
+@import "mixin/_text.scss";
+
+// Elements
+@import "elements/_buttons.scss";
+@import "elements/_text.scss";
+@import "elements/_heading.scss";
