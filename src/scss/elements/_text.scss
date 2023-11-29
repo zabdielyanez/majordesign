@@ -9,10 +9,23 @@
 
 // Text-color
 @each $color, $value in $main-colors{
-    .has-text-#{$color}{
+    .is-text-#{$color}{
         @include text-color($value);
     }
 }
+
+// Title
+
+.title{
+    font-weight: $title-font-weight;
+    line-height: $title-font-height;
+}
+.title.is-1{font-size: $title-1-font-size;}
+.title.is-2{font-size: $title-2-font-size;}
+.title.is-3{font-size: $title-3-font-size;}
+.title.is-4{font-size: $title-4-font-size;}
+.title.is-5{font-size: $title-5-font-size;}
+.title.is-6{font-size: $title-6-font-size;}
 
 // Subtitle
 
@@ -20,12 +33,12 @@
     font-weight: $subtitle-font-weight;
     line-height: $subtitle-font-height;
 }
-
 .subtitle.is-1{font-size: $subtitle-1-font-size;}
 .subtitle.is-2{font-size: $subtitle-2-font-size;}
 .subtitle.is-3{font-size: $subtitle-3-font-size;}
 .subtitle.is-4{font-size: $subtitle-4-font-size;}
 .subtitle.is-5{font-size: $subtitle-5-font-size;}
+.subtitle.is-6{font-size: $subtitle-6-font-size;}
 
 // Focus
 
@@ -33,12 +46,12 @@
     font-weight: $focus-font-weight;
     line-height: $focus-font-height;
 }
-
 .focus.is-1{font-size: $focus-1-font-size;}
 .focus.is-2{font-size: $focus-2-font-size;}
 .focus.is-3{font-size: $focus-3-font-size;}
 .focus.is-4{font-size: $focus-4-font-size;}
 .focus.is-5{font-size: $focus-5-font-size;}
+.focus.is-6{font-size: $focus-6-font-size;}
 
 // Text config
 
@@ -50,30 +63,32 @@
 .is-overlined{text-decoration: overline;}
 .is-striked{text-decoration: line-through;}
 
-/*
+// Font weight
 
-.has-font-weight-bold{font-weight: 700;}
+.has-font-weight-bold{font-weight: 7000;}
 .has-font-weight-semibold{font-weight: 500;}
 .has-font-weight-light{font-weight: 300;}
 .has-font-weight-normal{font-weight: $main-font-weight;}
 
+// Text align
+
 .has-text-left{text-align: left;}
-.has-text-centered{text-align: center;}
+.has-text-center{text-align: center;}
 .has-text-right{text-align: right;}
-.has-text-justified{text-align: justify;}
+.has-text-justify{text-align: justify;}
 
+// Spacing
 
+.has-spacing-tighter{letter-spacing: -0.05rem;}
+.has-spacing-tight{letter-spacing: -0.025rem;}
+.has-spacing-normal{ letter-spacing: 0rem;}
+.has-spacing-wide{letter-spacing: 0.025rem;}
+.has-spacing-wider{letter-spacing: 0.05rem;}
 
-.has-spacing-tighter { letter-spacing: -0.05rem; }
-.has-spacing-tight { letter-spacing: -0.025rem; }
-.has-spacing-normal { letter-spacing: 0rem; }
-.has-spacing-wide { letter-spacing: 0.025rem; }
-.has-spacing-wider { letter-spacing: 0.05rem; }
+// Line height
 
-
-.has-line-tight{ line-height: 1.1; }
-.has-line-snug{ line-height: 1.3; }
-.has-line-normal{ line-height: 1.5; }
-.has-line-relaxed{ line-height: 1.7; }
-.has-line-loose{ line-height: 2; }
-*/
+.has-height-tight{line-height: 1.1;}
+.has-height-snug{line-height: 1.3;}
+.has-height-normal{line-height: $main-font-height;}
+.has-height-relax{line-height: 1.7;}
+.has-height-loose{line-height: 2;}

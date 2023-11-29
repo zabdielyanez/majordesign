@@ -1,7 +1,7 @@
 {
   "name": "majordesign",
   "version": "1.0.0",
-  "description": "Majordesign is a cutting-edge CSS framework that seamlessly integrates natural language syntax, making it exceptionally user-friendly and easily understandable. ",
+  "description": "Majordesign is a cutting-edge CSS framework that seamlessly integrates natural language syntax, making it exceptionally user-friendly and easily understandable.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
