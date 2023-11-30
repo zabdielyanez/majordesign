@@ -1,15 +1,13 @@
 /**
     * Text.scss
     *
-    * This file contains the styles for text elements throughout the entire website,
-    * excluding headings (which are managed in _heading.scss).
-    *
-    * It covers properties such as font size, color, spacing, and other text-specific styles.
+    * This file contains the styles for text elements throughout the entire website.
+    * Covers font size, color, spacing, and other text-specific styles.
 */
 
 // Text-color
 @each $color, $value in $main-colors{
-    .is-text-#{$color}{
+    .has-text-#{$color}{
         @include text-color($value);
     }
 }
@@ -20,6 +18,7 @@
     font-weight: $title-font-weight;
     line-height: $title-font-height;
 }
+
 .title.is-1{font-size: $title-1-font-size;}
 .title.is-2{font-size: $title-2-font-size;}
 .title.is-3{font-size: $title-3-font-size;}
@@ -65,10 +64,10 @@
 
 // Font weight
 
-.has-font-weight-bold{font-weight: 7000;}
-.has-font-weight-semibold{font-weight: 500;}
-.has-font-weight-light{font-weight: 300;}
-.has-font-weight-normal{font-weight: $main-font-weight;}
+.is-weight-bold{font-weight: 7000;}
+.is-weight-semibold{font-weight: 500;}
+.is-weight-light{font-weight: 300;}
+.is-weight-normal{font-weight: $main-font-weight;}
 
 // Text align
 

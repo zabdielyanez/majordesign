@@ -1,13 +1,4 @@
-$main-colors: (
-    'primary': $primary,
-    'secondary': $secondary,
-    'accent': $accent,
-    'contrast': $contrast,
-    
-    'black': $black,
-    'white': $white,
-    'example': #ff8989
-);
+
 
 button, .button{
     display: inline-block;
@@ -57,8 +48,8 @@ button, .button{
 // Ghost buttons
 
 @each $color, $value in $main-colors{
-    .button.is-#{$color}.is-ghost:not(.is-link){
-        @include button-ghost-style($value);
+    .button.is-#{$color}.is-clear:not(.is-link){
+        @include button-clear-style($value);
     }
 }
 
@@ -71,7 +62,6 @@ button, .button{
 */
 
 .button.is-link{
-
     text-decoration: underline;
     color: $primary;
 }
@@ -139,12 +129,12 @@ button:disabled:focus{
     * Note: This property may undergo changes in the future; however, it is currently not necessary.
 */
 
-.button.round-small{
+.button.is-round-small{
     border-radius: 7px;
 }
-.button.round-normal{
+.button.is-round-normal{
     border-radius: 0;
 }
-.button.round-large{
+.button.is-round-large{
     border-radius: 9999px;
 }

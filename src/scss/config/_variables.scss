@@ -22,9 +22,18 @@ $success: #ffa100;
 $disabled: #a7a7a7;
 $silent: #7a7a7a;
 
-//
+// Colors for buttons / text color / backgrounds
 
-
+$main-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'accent': $accent,
+    'contrast': $contrast,
+    
+    'black': $black,
+    'white': $white,
+    'example': #ff8989
+);
 
 // Specials
 $gradient-primary-secondary: linear-gradient($primary, $secondary);
@@ -74,7 +83,7 @@ $subtitle-2-font-size: 2.170rem;
 $subtitle-3-font-size: 1.500rem;
 $subtitle-4-font-size: 1.250rem;
 $subtitle-5-font-size: 1rem;
-
+$subtitle-6-font-size: .925rem;
 
 /**
    * Focus
@@ -90,6 +99,7 @@ $focus-2-font-size: 5.875rem;
 $focus-3-font-size: 4.5rem;
 $focus-4-font-size: 3.250rem;
 $focus-5-font-size: 3rem;
+$focus-6-font-size: 2.5rem;
 
 /*
 special font family

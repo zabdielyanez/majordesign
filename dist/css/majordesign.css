@@ -6,8 +6,9 @@
     * License under MIT (https://opensource.org/licenses/MIT)
     * 
     * Description:
-    * Majordesign is a modern and minimalist CSS framework built using SCSS. It aims to provide a diverse range
-    * of modern and minimalist design options for web pages. This framework is tailored for developers seeking
+    * Majordesign is a cutting-edge CSS framework that seamlessly integrates natural language syntax, 
+    * making it exceptionally user-friendly and easily understandable. It aims to provide a diverse range
+    * of modern and minimalist design options for web pages. The framework is tailored for developers seeking
     * to implement clean, aesthetically pleasing, and contemporary styles with ease.
     * 
     * Majordesign is particularly suited for projects that require a sleek and uncluttered look, ensuring that the
@@ -19,7 +20,7 @@
     * your project. For detailed instructions and examples, refer to the documentation provided in the repository.
     * 
     * Release Notes:
-    * Version 1.0.0 marks the initial release of Majordesign, featuring a comprehensive suite of styled components,
+    * Version 1.0 marks the initial release of Majordesign, featuring a comprehensive suite of styled components,
     * utility classes, and responsive design templates.
 */
 *,
@@ -344,66 +345,66 @@ button {
   background-color: #ff8989;
   color: #fff
 }
-.button.is-primary.is-ghost:not(.is-link) {
+.button.is-primary.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #ffa100
 }
-.button.is-primary.is-ghost:not(.is-link):hover {
+.button.is-primary.is-clear:not(.is-link):hover {
   background-color: #ffa100;
   color: #fff
 }
-.button.is-secondary.is-ghost:not(.is-link) {
+.button.is-secondary.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #061830
 }
-.button.is-secondary.is-ghost:not(.is-link):hover {
+.button.is-secondary.is-clear:not(.is-link):hover {
   background-color: #061830;
   color: #fff
 }
-.button.is-accent.is-ghost:not(.is-link) {
+.button.is-accent.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #f60
 }
-.button.is-accent.is-ghost:not(.is-link):hover {
+.button.is-accent.is-clear:not(.is-link):hover {
   background-color: #f60;
   color: #fff
 }
-.button.is-contrast.is-ghost:not(.is-link) {
+.button.is-contrast.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #161616
 }
-.button.is-contrast.is-ghost:not(.is-link):hover {
+.button.is-contrast.is-clear:not(.is-link):hover {
   background-color: #161616;
   color: #fff
 }
-.button.is-black.is-ghost:not(.is-link) {
+.button.is-black.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #0a0a0a
 }
-.button.is-black.is-ghost:not(.is-link):hover {
+.button.is-black.is-clear:not(.is-link):hover {
   background-color: #0a0a0a;
   color: #fff
 }
-.button.is-white.is-ghost:not(.is-link) {
+.button.is-white.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #fff
 }
-.button.is-white.is-ghost:not(.is-link):hover {
+.button.is-white.is-clear:not(.is-link):hover {
   background-color: #fff;
   color: #fff
 }
-.button.is-example.is-ghost:not(.is-link) {
+.button.is-example.is-clear:not(.is-link) {
   background-color: transparent;
   border-color: transparent;
   color: #ff8989
 }
-.button.is-example.is-ghost:not(.is-link):hover {
+.button.is-example.is-clear:not(.is-link):hover {
   background-color: #ff8989;
   color: #fff
 }
@@ -439,13 +440,13 @@ button:disabled:focus {
 .button .button-icon {
   margin-right: .55rem
 }
-.button.round-small {
+.button.is-round-small {
   border-radius: 7px
 }
-.button.round-normal {
+.button.is-round-normal {
   border-radius: 0
 }
-.button.round-large {
+.button.is-round-large {
   border-radius: 9999px
 }
 .has-text-primary {
@@ -469,6 +470,28 @@ button:disabled:focus {
 .has-text-example {
   color: #ff8989!important
 }
+.title {
+  font-weight: 600;
+  line-height: 1.5
+}
+.title.is-1 {
+  font-size: 3rem
+}
+.title.is-2 {
+  font-size: 2.17rem
+}
+.title.is-3 {
+  font-size: 1.5rem
+}
+.title.is-4 {
+  font-size: 1.25rem
+}
+.title.is-5 {
+  font-size: 1.125rem
+}
+.title.is-6 {
+  font-size: 1rem
+}
 .subtitle {
   font-weight: 600;
   line-height: 1.5
@@ -488,6 +511,9 @@ button:disabled:focus {
 .subtitle.is-5 {
   font-size: 1rem
 }
+.subtitle.is-6 {
+  font-size: .925rem
+}
 .focus {
   font-weight: 700;
   line-height: 1.7
@@ -506,6 +532,9 @@ button:disabled:focus {
 }
 .focus.is-5 {
   font-size: 3rem
+}
+.focus.is-6 {
+  font-size: 2.5rem
 }
 .is-uppercase {
   text-transform: uppercase
@@ -528,37 +557,78 @@ button:disabled:focus {
 .is-striked {
   text-decoration: line-through
 }
-.title,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
+.is-weight-bold {
+  font-weight: 7000
+}
+.is-weight-semibold {
+  font-weight: 500
+}
+.is-weight-light {
+  font-weight: 300
+}
+.is-weight-normal {
+  font-weight: 400
+}
+.has-text-left {
+  text-align: left
+}
+.has-text-center {
+  text-align: center
+}
+.has-text-right {
+  text-align: right
+}
+.has-text-justify {
+  text-align: justify
+}
+.has-spacing-tighter {
+  letter-spacing: -.05rem
+}
+.has-spacing-tight {
+  letter-spacing: -.025rem
+}
+.has-spacing-normal {
+  letter-spacing: 0
+}
+.has-spacing-wide {
+  letter-spacing: .025rem
+}
+.has-spacing-wider {
+  letter-spacing: .05rem
+}
+.has-height-tight {
+  line-height: 1.1
+}
+.has-height-snug {
+  line-height: 1.3
+}
+.has-height-normal {
   line-height: 1.5
 }
-.title.is-1,
-h1 {
-  font-size: 3rem
+.has-height-relax {
+  line-height: 1.7
 }
-.title.is-2,
-h2 {
-  font-size: 2.17rem
+.has-height-loose {
+  line-height: 2
 }
-.title.is-3,
-h3 {
-  font-size: 1.5rem
+.container {
+  padding: 0 1.125rem;
+  margin: 0 auto
 }
-.title.is-4,
-h4 {
-  font-size: 1.25rem
+.container.is-extra-small {
+  max-width: 350px
 }
-.title.is-5,
-h5 {
-  font-size: 1.125rem
+.container.is-small {
+  max-width: 500px
 }
-.title.is-6,
-h6 {
-  font-size: 1rem
+.container.is-medium,
+.container.is-normal {
+  max-width: 950px
+}
+.container.is-large {
+  max-width: 1115px
+}
+.container.is-extra-large,
+.container.is-fullwidth {
+  max-width: 100%
 }

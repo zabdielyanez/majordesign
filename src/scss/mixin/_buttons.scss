@@ -36,7 +36,7 @@
     }
 }
 
-@mixin button-ghost-style($bg-color) {
+@mixin button-clear-style($bg-color) {
     background-color: transparent;
     border-color: transparent;
     color: $bg-color;

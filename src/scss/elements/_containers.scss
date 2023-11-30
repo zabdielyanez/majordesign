@@ -1,0 +1,23 @@
+/**
+    * Containers.scss
+    *
+    * This file defines styling for containers. Containers work similarly to buttons; 
+    * if you don't define a div with the class "container", the size classes won't apply. 
+    * Keep it simple!
+*/
+
+// Main config
+
+.container{
+    padding: 0 1.125rem;
+    margin: 0 auto;
+}
+
+// Size
+
+.container.is-extra-small{max-width: 350px;}
+.container.is-small{max-width: 500px;}
+.container.is-normal, .container.is-medium{max-width: 950px;}
+.container.is-large{max-width: 1115px;}
+.container.is-extra-large, .container.is-fullwidth{max-width: 100%;}
+
